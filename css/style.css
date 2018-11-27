@@ -1,0 +1,183 @@
+body {
+    font-family: "Arial", sans-serif;
+    color: #000000;
+    background-color: #dcdcdc;
+}
+
+p {
+    text-align: center;
+}
+
+.page-title {
+    text-align: center;
+}
+
+.general-block {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather {
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: center;
+    justify-content: center;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.button:focus,
+.button:active,
+.button:hover {
+    outline: none;
+}
+
+.button:focus polygon {
+    fill: blue;
+}
+
+.button:active polygon,
+.button:hover polygon {
+    fill: #ffffff;
+}
+
+.button-left,
+.button-left svg,
+.button-right,
+.button-right svg {
+    width: 60px;
+    height: 60px;
+}
+
+.button-left:disabled svg,
+.button-right:disabled svg {
+    display: none;
+}
+
+.weather-card {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    margin: 5px;
+}
+
+.weekday {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0;
+}
+
+.date {
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: bold;
+    margin: 8px 0 20px 0;
+}
+
+.image {
+    width: 128px;
+    height: 128px;
+}
+
+.temperature-day {
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.temperature-night {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 5px 0 20px 0;
+}
+
+.precipitation {
+    margin: 0;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+@media (max-width: 1024px) {
+    .weather {
+        width: 600px;
+    }
+
+    .weather-card {
+        padding: 30px 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    p {
+        text-align: right;
+    }
+    .general-block {
+        flex-direction: column;
+    }
+
+    .weather {
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .weekday {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .weather-card {
+        width: 300px;
+        padding: 20px 20px;
+        margin: 2px;
+        position: relative;
+    }
+
+    .button-right,
+    .button-left {
+        transform: rotate(90deg);
+    }
+
+    .button-left,
+    .button-left svg,
+    .button-right,
+    .button-right svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .date {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .image {
+        position: absolute;
+        top: 50%;
+        margin-top: -54px;
+        left: 30px;
+    }
+
+    .temperature-day {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .temperature-night {
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .precipitation {
+        font-size: 15px;
+        line-height: 15px;
+    }
+}
+

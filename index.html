@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather forecast</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1 class="page-title">Прогноз погоды</h1>
+<div class="general-block">
+    <button class="button button-left" type="button">
+        <svg viewBox="0 0 35.414 35.414" style="enable-background:new 0 0 35.414 35.414;" xml:space="preserve">
+            <polygon fill="#000000" points="25.536,0 8.39,17 8.39,18.414 25.536,35.414 27.024,34 10.767,17.707 27.005,1.414"/>
+        </svg>
+    </button>
+    <div class="weather">
+    </div>
+    <button class="button button-right" type="button">
+        <svg viewBox="0 0 35.414 35.414" style="enable-background:new 0 0 35.414 35.414;" xml:space="preserve">
+            <polygon fill="#000000" points="27.051,17 9.905,0 8.417,1.414 24.674,17.707 8.363,34 9.914,35.414 27.051,18.414"/>
+        </svg>
+    </button>
+</div>
+
+<template id="card">
+    <article class="weather-card">
+        <p class="weekday">Сегодня</p>
+        <p class="date">1 ноября</p>
+        <img class="image" src="#">
+        <p class="temperature-day">днем +2°</p>
+        <p class="temperature-night">ночью -3°</p>
+        <p class="precipitation">без осадков</p>
+    </article>
+</template>
+
+<script src="js/data.js"></script>
+<script src="js/card.js"></script>
+
+</body>
+</html>
